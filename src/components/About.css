@@ -1,0 +1,139 @@
+.about-section {
+  background-color: #3e3a30; /* tom escuro, elegante */
+  padding: 6rem 1rem 0 1rem;
+  font-family: 'Montserrat', sans-serif;
+  color: #f1f1e8; /* texto claro para contraste */
+  position: relative;
+  overflow: hidden;
+  text-align: left;
+}
+
+.about-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  flex-wrap: wrap;
+  padding-bottom: 5rem;
+}
+
+.about-text {
+  flex: 1 1 400px;
+  min-width: 280px;
+}
+
+.about-text h2 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  font-size: 3rem;
+  color: #e1c699; /* dourado claro */
+  margin-bottom: 1.5rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.about-text p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  margin-bottom: 1.3rem;
+  color: #ddd9cc; /* off-white suave */
+}
+
+.about-text strong {
+  color: #f1e6d8;
+}
+
+.about-image-wrapper {
+  flex: 1 1 400px;
+  min-width: 280px;
+  display: flex;
+  justify-content: center;
+}
+
+.about-image-wrapper img {
+  max-width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 12px 28px rgba(225,198,153,0.3);
+  object-fit: cover;
+  height: auto;
+  max-height: 400px;
+}
+
+/* Wave container */
+.about-wave {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: translateY(1px);
+  pointer-events: none;
+}
+
+.about-wave svg {
+  display: block;
+  width: 100%;
+  height: 150px;
+}
+
+/* Responsividade */
+
+/* Tablets e pequenos desktops */
+@media (max-width: 900px) {
+  .about-container {
+    flex-direction: column;
+    padding-bottom: 3rem;
+  }
+
+  .about-image-wrapper {
+    margin-top: 2rem;
+  }
+
+  .about-text h2 {
+    font-size: 2.5rem;
+  }
+
+  .about-text p {
+    font-size: 1rem;
+  }
+}
+
+/* Celulares médios */
+@media (max-width: 600px) {
+  .about-section {
+    padding: 4rem 1rem 0 1rem;
+  }
+
+  .about-text h2 {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .about-text p {
+    font-size: 0.95rem;
+    text-align: center;
+  }
+
+  .about-text, 
+  .about-image-wrapper {
+    flex: 1 1 100%;
+    min-width: auto;
+  }
+
+  .about-image-wrapper {
+    margin-top: 1.5rem;
+  }
+}
+
+/* Celulares pequenos */
+@media (max-width: 400px) {
+  .about-text h2 {
+    font-size: 1.75rem;
+  }
+
+  .about-text p {
+    font-size: 0.9rem;
+  }
+}

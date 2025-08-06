@@ -1,0 +1,134 @@
+.services {
+  background-color: #fefcf7;
+  padding: 80px 20px;
+  font-family: 'Montserrat', sans-serif;
+  color: #3a3a3a;
+  user-select: none;
+  text-align: center;
+}
+
+.services-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 3rem;
+  color: #8c7243;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  margin-bottom: 70px;
+  position: relative;
+}
+
+.services-title::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 3px;
+  background-color: #bca763;
+  margin: 20px auto 0;
+  border-radius: 2px;
+}
+
+/* Container das linhas */
+.services-row {
+  display: flex;
+  flex-wrap: nowrap; /* mantém cards na mesma linha */
+  justify-content: center;
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto 50px auto;
+}
+
+/* Primeira linha - 3 cards */
+.services-row:first-of-type {
+  flex-wrap: nowrap;
+}
+
+.services-row:first-of-type .service-card {
+  flex: 1 1 calc((100% / 3) - 20px); /* 3 cards lado a lado */
+  max-width: 340px;
+}
+
+/* Segunda linha - 2 cards centralizados */
+.services-row:last-of-type {
+  justify-content: center;
+}
+
+.services-row:last-of-type .service-card {
+  flex: 1 1 calc((100% / 2) - 15px); /* 2 cards lado a lado */
+  max-width: 400px;
+}
+
+.service-card {
+  background: #fff;
+  border: none;
+  border-radius: 24px;
+  padding: 40px 30px;
+  box-shadow: 0 10px 25px rgba(188, 167, 99, 0.15);
+  text-align: left;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  cursor: default;
+}
+
+.service-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 6px;
+  width: 100%;
+  background-color: #bca763;
+  border-radius: 24px 24px 0 0;
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 45px rgba(188, 167, 99, 0.25);
+}
+
+.service-card-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #8c7243;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+  user-select: text;
+}
+
+.service-card-desc {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #555;
+  user-select: text;
+  margin: 0;
+}
+
+/* Responsividade */
+
+/* Tablet e laptops menores */
+@media (max-width: 1024px) {
+  .services-row {
+    flex-wrap: wrap;
+  }
+  .services-row:first-of-type .service-card,
+  .services-row:last-of-type .service-card {
+    flex: 1 1 48%;
+    max-width: none;
+  }
+  .services-row:last-of-type {
+    justify-content: flex-start;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .services-row,
+  .services-row:last-of-type {
+    flex-direction: column;
+    gap: 25px;
+  }
+  .service-card {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+}
