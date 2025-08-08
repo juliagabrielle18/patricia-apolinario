@@ -17,9 +17,15 @@ function Hero() {
           Compromisso, ética e excelência no Direito Previdenciário, Imobiliário,
           Família, Sucessões e Agrário.
         </p>
-        <a href="#contato" className="btn-primary">
-          Agende sua consulta
-        </a>
+<a
+  href="https://wa.me/5561994449656?text=Olá%2C%20gostaria%20de%20agendar%20uma%20consulta."
+  className="btn-primary"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  Agende sua consulta
+</a>
+
       </div>
     </section>
   );

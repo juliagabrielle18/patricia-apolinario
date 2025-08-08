@@ -21,7 +21,17 @@ function Team() {
             <li><strong>Ética irrestrita:</strong> Transparência e honestidade em todas as etapas.</li>
             <li><strong>Foco em resultados:</strong> Soluções rápidas e eficazes para seu caso.</li>
           </ul>
-          <button onClick={() => alert('Agende sua consulta!')}>Agende sua Consulta</button>
+          <button
+  onClick={() =>
+    window.open(
+      "https://wa.me/61994449656?text=Olá%2C%20gostaria%20de%20agendar%20uma%20consulta.",
+      "_blank"
+    )
+  }
+>
+  Agende sua Consulta
+</button>
+
         </div>
       </div>
     </section>

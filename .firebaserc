@@ -1,5 +1,8 @@
 {
   "projects": {
-    "default": "patricia-apolinario-site"
-  }
+    "default": "patricia-apolinario-site",
+    "ls": "patricia-apolinario-site"
+  },
+  "targets": {},
+  "etags": {}
 }
