@@ -18,7 +18,7 @@ function Hero() {
           Família, Sucessões e Agrário.
         </p>
 <a
-  href="https://wa.me/5561994449656?text=Olá%2C%20gostaria%20de%20agendar%20uma%20consulta."
+  href="https://wa.me/5561984728164?text=Olá%2C%20gostaria%20de%20agendar%20uma%20consulta."
   className="btn-primary"
   target="_blank"
   rel="noopener noreferrer"

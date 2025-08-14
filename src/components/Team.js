@@ -11,20 +11,24 @@ function Team() {
           <h2>Patrícia Apolinário</h2>
           <h3>Fundadora & Advogada Principal</h3>
           <blockquote>
-            “Transformando desafios jurídicos em soluções reais, com ética, paixão e dedicação.”
+            “Transformando desafios jurídicos em soluções concretas, com ética, paixão e dedicação.”
           </blockquote>
           <p>
-           Acreditamos em uma advocacia feita com escuta, cuidado e presença. Cada cliente é único — e cada causa, tratada com a atenção que merece.
+          Nosso compromisso:
           </p>
           <ul>
-            <li><strong>Atendimento humanizado:</strong> Você é mais que um processo.</li>
-            <li><strong>Ética irrestrita:</strong> Transparência e honestidade em todas as etapas.</li>
-            <li><strong>Foco em resultados:</strong> Soluções rápidas e eficazes para seu caso.</li>
+            <li><strong>Atendimento humanizado</strong> valorizando sua história e necessidades.</li>
+            <li><strong>Ética irrestrita</strong> com transparência e honestidade.</li>
+            <li><strong>Foco em resultados ágeis</strong> e alinhados aos seus objetivos.</li>
           </ul>
+          <p>
+          Conte com uma equipe que respeita você e luta pelo seu direito com excelência.
+          </p>
+
           <button
   onClick={() =>
     window.open(
-      "https://wa.me/61994449656?text=Olá%2C%20gostaria%20de%20agendar%20uma%20consulta.",
+      "https://wa.me/61984728164?text=Olá%2C%20gostaria%20de%20agendar%20uma%20consulta.",
       "_blank"
     )
   }

@@ -21,7 +21,7 @@ function Header() {
         ☰
       </button>
 
-      {/* ✅ Mover o nav para dentro do .header-content */}
+      
       <nav className={`nav ${menuOpen ? 'open' : ''}`}>
         <ul className="nav-list">
           <li><a href="#inicio">Início</a></li>

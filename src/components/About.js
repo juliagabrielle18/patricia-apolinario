@@ -9,17 +9,15 @@ function About() {
         <div className="about-text">
           <h2>Sobre Nós</h2>
           <p>
-            Na <strong>Patrícia Apolinário Advocacia & Assessoria</strong>, transformamos o conceito de advocacia com uma abordagem inovadora e centrada no cliente.
+            Na <strong>Patrícia Apolinário Advocacia & Assessoria</strong>, oferecemos atendimento moderno, personalizado e focado nas necessidades de cada cliente.
           </p>
           <p>
-            Atuamos com excelência e pioneirismo nas áreas previdenciária, imobiliária, família, sucessões e direito agrário, oferecendo soluções jurídicas estratégicas que garantem segurança e resultados efetivos.
+           Atuamos em diversas áreas do Direito, garantindo soluções eficazes, segurança jurídica e proteção dos direitos.
           </p>
           <p>
-            Nossa equipe combina profundo conhecimento técnico com um atendimento humanizado e personalizado — porque para nós, cada cliente é único e merece a melhor defesa e orientação.
-          </p>
-          <p>
-            Conquiste tranquilidade e confiança com quem entende o futuro do direito e do seu negócio.
-          </p>
+           Nossa equipe combina conhecimento técnico e atendimento humanizado para uma defesa alinhada à sua realidade. Conte conosco para proteger você e seu negócio com confiança e excelência.
+          </p>                     
+          
         </div>
         <div className="about-image-wrapper">
           <img src={aboutImage} alt="Advogada Patrícia Apolinário" />

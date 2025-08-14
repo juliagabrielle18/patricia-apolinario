@@ -6,8 +6,8 @@ import { collection, addDoc, Timestamp } from 'firebase/firestore';
 
 function Contact() {
   const [form, setForm] = useState({
-    name: '',
-    email: '',
+    firstName: '',
+    lastName: '',
     message: '',
   });
 
@@ -18,19 +18,20 @@ function Contact() {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    const { name, email, message } = form;
+    const { firstName, lastName, message } = form;
+    const fullName = `${firstName} ${lastName}`.trim();
 
-    const text = `Olá, meu nome é *${name}*.\nMeu e-mail é: ${email}.\n\nMensagem:\n${message}`;
-    const phoneNumber = '5561994449656';
+    const text = `${fullName}: ${message}`;
+
+    const phoneNumber = '5561984728164';
     const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(text)}`;
 
-    // Abre o WhatsApp primeiro para evitar bloqueio de popup
     window.open(url, '_blank');
 
     try {
       await addDoc(collection(db, "contatos"), {
-        name,
-        email,
+        firstName,
+        lastName,
         message,
         createdAt: Timestamp.now()
       });
@@ -50,24 +51,24 @@ function Contact() {
           </p>
           <ul>
             <li><FaEnvelope className="icon" /> patriciaoliveiraapolinarioadv@gmail.com</li>
-            <li><FaPhoneAlt className="icon" /> (61) 994449656</li>
+            <li><FaPhoneAlt className="icon" /> (61) 984728164</li>
           </ul>
         </div>
 
         <form className="contact-form" onSubmit={handleSubmit} noValidate>
           <input
             type="text"
-            name="name"
-            placeholder="Seu nome"
-            value={form.name}
+            name="firstName"
+            placeholder="Nome"
+            value={form.firstName}
             onChange={handleChange}
             required
           />
           <input
-            type="email"
-            name="email"
-            placeholder="Seu e-mail"
-            value={form.email}
+            type="text"
+            name="lastName"
+            placeholder="Sobrenome"
+            value={form.lastName}
             onChange={handleChange}
             required
           />
